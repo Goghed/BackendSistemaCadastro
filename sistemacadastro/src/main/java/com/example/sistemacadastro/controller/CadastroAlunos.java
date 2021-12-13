@@ -26,19 +26,19 @@ public class CadastroAlunos {
 
         Estudante e1 = new Estudante();        
         e1.setId(10);
-        e1.setName("Ed Carlos");
+        e1.setNome("Ed Carlos");
 
         Estudante e2 = new Estudante();        
         e2.setId(10);
-        e2.setName("Ed Carlos");
+        e2.setNome("Ed Carlos");
 
         Estudante e3 = new Estudante();        
         e3.setId(10);
-        e3.setName("Ed Carlos");
+        e3.setNome("Ed Carlos");
 
         Estudante e4 = new Estudante();        
         e4.setId(10);
-        e4.setName("Ed Carlos");
+        e4.setNome("Ed Carlos");
 
         ArrayList <Estudante> list = new ArrayList<>();
 

@@ -3,7 +3,7 @@ package com.example.sistemacadastro.entity;
 public class Estudante {
     
     private int id;
-    private String name;
+    private String nome;
     private String curso;
     private int semestre;
     private String sexo;
@@ -15,11 +15,11 @@ public class Estudante {
     public void setId(int id) {
         this.id = id;
     }
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     public String getCurso() {
         return curso;
