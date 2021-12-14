@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,7 +40,16 @@ public class CadastroAlunos {
     @GetMapping("{id}")
     public Estudante getEstudante(@PathVariable int id){
         Estudante e = repo.findById(id).get();
-
         return e;
     }
+
+     // End Point 3
+    // Salva um estudante, é necessário passar os dados do estudante
+    @PostMapping
+    public Estudante salvar(@RequestBody Estudante estudante){
+        estudante = repo.save(estudante);
+        return estudante;
+    }
+
+
 }
