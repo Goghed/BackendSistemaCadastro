@@ -39,6 +39,6 @@ public class CadastroAlunos {
     public Estudante getEstudante(@PathVariable int id){
         Estudante e = repo.findById(id).get();
 
-        return h;
+        return e;
     }
 }
