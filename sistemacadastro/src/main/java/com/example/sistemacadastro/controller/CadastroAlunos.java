@@ -34,9 +34,7 @@ public class CadastroAlunos {
     // (GET) http://localhost:8080/estudantes
     @GetMapping
     public List <Estudante> getEstudantes(){
-
         List <Estudante> list = repo.findAll();
-
         return list;
     }
 
