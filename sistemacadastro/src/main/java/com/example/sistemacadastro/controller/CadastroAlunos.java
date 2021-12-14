@@ -37,7 +37,7 @@ public class CadastroAlunos {
     // (GET) http://localhost:8080/estudantes/{id}
     @GetMapping("{id}")
     public Estudante getEstudante(@PathVariable int id){
-        Estudante e = repo.findById(id).get;
+        Estudante e = repo.findById(id).get();
 
         return h;
     }
